@@ -1,0 +1,11 @@
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
+
+
+spring:
+  main:
+    banner-mode: off
+  output:
+    ansi:
+      enabled: NEVER

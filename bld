@@ -1,0 +1,12 @@
+#! bin/bash -p
+
+PID=$(lsof -ti tcp:8080);
+
+echo "kill $PID";
+
+if [[ -n $PID ]]; then
+  kill -9 $PID;
+fi
+
+
+mvn clean install -B

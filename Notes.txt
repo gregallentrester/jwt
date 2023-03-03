@@ -1,0 +1,27 @@
+A JWT can be encrypted using either
+
+  a.  A symmetric key (shared secret)
+  b.  An asymmetric keys (the private key of a private-public pair).
+      Recommended
+
+
+^^^
+Symmetric key:
+The same key is used for both encryption (when the JWT is created)
+and decryption (MobileTogether Server uses the key to verify the JWT).
+
+The symmetric key—also known as the shared secret—is stored as
+a setting in MobileTogether Server.
+
+ref: Symmetric Key: Shared Secret
+
+
+^^^
+Asymmetric keys:
+Different keys are used for encryption (private key)
+and decryption (public key).
+
+The public key is stored as a setting in MobileTogether Server
+so that the JWT can be verified.
+
+ref: see Asymmetric Keys: Public Key
